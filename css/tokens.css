@@ -1,4 +1,4 @@
-/* Interview Lab 디자인 토큰 (#78, 디자인 하은). 값은 여기서만 정의하고 다른 CSS는 var(--…)만 쓴다.
+/* Interview Lab 디자인 토큰 . 값은 여기서만 정의하고 다른 CSS는 var(--…)만 쓴다.
    테마: 기본 라이트, 시스템 다크 따름, <html data-theme="light|dark">가 있으면 그것이 우선. */
 :root {
   color-scheme: light;
