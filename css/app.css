@@ -53,3 +53,12 @@ a.btn{text-decoration:none;color:var(--text)}
 a.btn-primary{color:var(--on-accent)}
 a.review-item{color:var(--text)}
 .actions>a.btn{flex:1 1 9rem}
+
+/* 인쇄: 조작 UI 숨기고 흑백 친화 */
+@media print {
+  .topbar, .foot, .nav, .actions, #theme, #reset, .filters, .btn { display: none !important; }
+  body { background: #fff !important; color: #000 !important; }
+  .wrap { max-width: none !important; padding: 0 !important; }
+  .qcard, .card { box-shadow: none !important; border: 1px solid #999 !important; break-inside: avoid; }
+  a[href^="http"]::after { content: " (" attr(href) ")"; font-size: .8em; }
+}
